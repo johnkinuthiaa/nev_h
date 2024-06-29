@@ -19,7 +19,7 @@ export default function CreateListing() {
     description: '',
     address: '',
     type: 'rent',
-    bedrooms: 1,
+    bedrooms: 0,
     bathrooms: 1,
     regularPrice: 50,
     discountPrice: 0,
@@ -51,7 +51,7 @@ export default function CreateListing() {
           setUploading(false);
         })
         .catch((err) => {
-          setImageUploadError('Image upload failed (2 mb max per image)');
+          setImageUploadError('Image upload failed (each image should be 2MB)');
           setUploading(false);
         });
     } else {
@@ -156,7 +156,7 @@ export default function CreateListing() {
   return (
     <main className='p-3 max-w-4xl mx-auto'>
       <h1 className='text-3xl font-semibold text-center my-7'>
-        Create a Listing
+        Create a House Listing
       </h1>
       <form onSubmit={handleSubmit} className='flex flex-col sm:flex-row gap-4'>
         <div className='flex flex-col gap-4 flex-1'>
@@ -246,7 +246,7 @@ export default function CreateListing() {
               <input
                 type='number'
                 id='bedrooms'
-                min='1'
+                min='0'
                 max='10'
                 required
                 className='p-3 border border-gray-300 rounded-lg'
@@ -259,7 +259,7 @@ export default function CreateListing() {
               <input
                 type='number'
                 id='bathrooms'
-                min='1'
+                min='0'
                 max='10'
                 required
                 className='p-3 border border-gray-300 rounded-lg'
@@ -302,7 +302,7 @@ export default function CreateListing() {
                   <p>Discounted price</p>
 
                   {formData.type === 'rent' && (
-                    <span className='text-xs'>($ / month)</span>
+                    <span className='text-xs'>(sh / month)</span>
                   )}
                 </div>
               </div>
@@ -313,7 +313,7 @@ export default function CreateListing() {
           <p className='font-semibold'>
             Images:
             <span className='font-normal text-gray-600 ml-2'>
-              The first image will be the cover (max 6)
+              The first image becomes the cover (max 6)
             </span>
           </p>
           <div className='flex gap-4'>

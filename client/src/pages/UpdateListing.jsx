@@ -159,7 +159,7 @@ export default function CreateListing() {
         }),
       });
       const data = await res.json();
-      setLoading(false);
+      setLoading(false);p
       if (data.success === false) {
         setError(data.message);
       }
