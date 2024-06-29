@@ -52,15 +52,15 @@ export default function Home() {
         <h1 className='text-slate-700 font-bold text-3xl lg:text-6xl'>
           Find your next <span className='text-slate-500'>perfect</span>
           <br />
-          Home with ease
+          place with ease
         </h1>
         <div className='text-gray-400 text-xs sm:text-sm'>
-        Nevani housing is a company that is designed to assist you look for a great housing opportunity from the comfort of your home through modern technology
-        . 
-        It is a site thats aids in helping you find variety of options from in the same area.
-        It also provides information on the house rent, number if bedrooms and you can provide a suggestion or drop a complaint .
-
-        We are a dedicated team who strives for customer satisfaction .We aim to expand and enter new markets. We aim to lead the industry with innovative and reliable solutions.
+          Nevani housing is a company that is designed to assist you look for a great housing 
+          opportunity from the comfort of your home through modern technology . It is a site 
+          thats aids in helping you find variety of options from in the same area. It also provides 
+          information on the house rent, number if bedrooms and you can provide a suggestion or drop 
+          a complaint . We are a dedicated team who strives for customer satisfaction .We aim to expand 
+          and enter new markets. We aim to lead the industry with innovative and reliable solutions.
           <br />
           We have a wide range of properties for you to choose from.
         </div>
@@ -68,7 +68,7 @@ export default function Home() {
           to={'/search'}
           className='text-xs sm:text-sm text-blue-800 font-bold hover:underline'
         >
-          Let's find you a perfect home...
+          Let's get started...
         </Link>
       </div>
 
