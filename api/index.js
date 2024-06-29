@@ -8,7 +8,8 @@ import cookieParser from 'cookie-parser';
 import path from 'path';
 dotenv.config();
 
-mongoose.connect('mongodb+srv://kinuthiajohn122:lightyagami@pata-keja.vyxrdxp.mongodb.net/?retryWrites=true&w=majority&appName=pata-keja')
+mongoose
+  .connect('mongodb+srv://kinuthiajohn122:lightyagami@pata-keja.vyxrdxp.mongodb.net/?retryWrites=true&w=majority&appName=pata-keja')
   .then(() => {
     console.log('Connected to MongoDB!');
   })
@@ -48,5 +49,4 @@ app.use((err, req, res, next) => {
     message,
   });
 });
-  });
-});
+
