@@ -1,11 +1,11 @@
-import cookieParser from 'cookie-parser';
-import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
-import path from 'path';
+import dotenv from 'dotenv';
+import userRouter from './routes/user.route.js';
 import authRouter from './routes/auth.route.js';
 import listingRouter from './routes/listing.route.js';
-import userRouter from './routes/user.route.js';
+import cookieParser from 'cookie-parser';
+import path from 'path';
 dotenv.config();
 
 mongoose.connect('mongodb+srv://kinuthiajohn122:lightyagami@pata-keja.vyxrdxp.mongodb.net/?retryWrites=true&w=majority&appName=pata-keja')
@@ -46,5 +46,7 @@ app.use((err, req, res, next) => {
     success: false,
     statusCode,
     message,
+  });
+});
   });
 });
