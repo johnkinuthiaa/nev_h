@@ -27,8 +27,8 @@ export default function Header() {
       <div className='flex justify-between items-center max-w-6xl mx-auto p-3'>
         <Link to='/'>
           <h1 className='font-bold text-sm sm:text-xl flex flex-wrap'>
-            <span className='text-slate-500'>Pata</span>
-            <span className='text-slate-700'>Keja</span>
+            <span className='text-slate-500'>Nevani</span>
+            <span className='text-slate-700'>Housing</span>
           </h1>
         </Link>
         <form
@@ -37,7 +37,7 @@ export default function Header() {
         >
           <input
             type='text'
-            placeholder='Saka keja...'
+            placeholder='Search...'
             className='bg-transparent focus:outline-none w-24 sm:w-64'
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
