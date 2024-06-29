@@ -1,15 +1,14 @@
+import cookieParser from 'cookie-parser';
+import dotenv from 'dotenv';
 import express from 'express';
 import mongoose from 'mongoose';
-import dotenv from 'dotenv';
-import userRouter from './routes/user.route.js';
+import path from 'path';
 import authRouter from './routes/auth.route.js';
 import listingRouter from './routes/listing.route.js';
-import cookieParser from 'cookie-parser';
-import path from 'path';
+import userRouter from './routes/user.route.js';
 dotenv.config();
 
-mongoose
-  .connect(process.env.MONGO)
+mongoose.connect('mongodb+srv://kinuthiajohn122:lightyagami@pata-keja.vyxrdxp.mongodb.net/?retryWrites=true&w=majority&appName=pata-keja')
   .then(() => {
     console.log('Connected to MongoDB!');
   })
