@@ -7,7 +7,7 @@ export default function About() {
       <p className='mb-4 text-slate-700'>Nevani housing is a company that is designed to assist you look for a great housing opportunity from the comfort of your home through modern technology
       . 
       It is a site thats aids in helping you find variety of options from in the same area.
-      It also provides information on the house rent, number if bedrooms and you can provide a suggestion or drop a complaint .
+      It also provides information on the house rent, number of bedrooms and you can provide a suggestion or drop a complaint .
 
       We are a dedicated team who strives for customer satisfaction .We aim to expand and enter new markets. We aim to lead the industry with innovative and reliable solutions</p>
       <p className='mb-4 text-slate-700'>
