@@ -1,8 +1,9 @@
 import React from 'react'
 
 export default function About() {
+  const imageUrl = 'https://tinyurl.com/fy4scdma';
   return (
-    <div className="bg-cover bg-no-repeat h-screen opacity-50" style={{ backgroundImage: `url('https://tinyurl.com/fy4scdma')` }}>
+    <div className="bg-cover bg-no-repeat h-screen " style={{ backgroundImage: `url(${imageUrl})` }}>
        <div className='py-20 px-4 max-w-6xl mx-auto'>
       <h1 className='text-3xl font-bold mb-4 text-slate-800'>About Nevani Housing</h1>
       <p className='mb-4 text-slate-700'>Nevani housing is a company that is designed to assist you look for a great housing opportunity from the comfort of your home through modern technology
